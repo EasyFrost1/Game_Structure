@@ -5,8 +5,10 @@ import fr.easyfrost.minigame.cmd.PlayerCommands;
 import fr.easyfrost.minigame.cmd.PlayerCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
 
+// Refractor rename "Main" to the type of plugin to develop
 public final class Main extends JavaPlugin {
 
+    public final static String path = "plugins/ "+ Main.class.getName() +"/";
     private Main instance;
 
     @Override

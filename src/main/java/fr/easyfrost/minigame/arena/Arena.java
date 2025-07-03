@@ -1,5 +1,6 @@
 package fr.easyfrost.minigame.arena;
 
+import com.google.gson.JsonObject;
 import fr.easyfrost.minigame.arena.edit.EditingMod;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -61,6 +62,24 @@ public class Arena {
         EditingMod.getFakeBlocksPerPlayer().put(player.getName(), locationList);
     }
 
+    /* **************************************** */
+    /* ***              DATA                *** */
+    /*                                          */
+    /* **************************************** */
+
+    /**
+     * Return class to Json
+     *
+     * @return a JsonObject with all class info
+     */
+    public JsonObject getJson() {
+        JsonObject arenaJson = new JsonObject();
+
+        // TODO Complete with all class informations
+
+        return arenaJson;
+    }
+
     /* ************************************************** */
     /* ***             GETTERS & SETTERS              *** */
     /*                                                    */
@@ -85,5 +104,6 @@ public class Arena {
     public void setWaitingLobby(Location waitingLobby) {
         this.waitingLobby = waitingLobby;
     }
+
 
 }
