@@ -1,0 +1,14 @@
+name: Minigame
+version: '1.0-SNAPSHOT'
+main: fr.easyfrost.minigame.Main
+api-version: '1.21'
+author: EasyFrost
+description: "A simple game"
+commands:
+  zombie:
+    description: "Players commands"
+  zombie-admin:
+    description: "Admins commands"
+    permission: game.admin
+    permission-message: "You do not have permission !"
+
