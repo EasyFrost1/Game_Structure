@@ -3,6 +3,7 @@ package fr.easyfrost.minigame.inv;
 import fr.easyfrost.minigame.arena.Arena;
 import fr.easyfrost.minigame.arena.ArenaManager;
 import fr.easyfrost.minigame.utils.ItemManager;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;

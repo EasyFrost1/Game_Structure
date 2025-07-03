@@ -24,8 +24,8 @@ public class TypeMessage {
     /**
      * Send at player info message with generic format
      *
-     * @param player
-     * @param message
+     * @param player  player to send
+     * @param message message to send
      */
     public static void feedback(Player player, String message) {
         player.sendMessage(Color.ORANGE + "INFO"+ ": " + Color.AQUA + message);
@@ -38,7 +38,7 @@ public class TypeMessage {
     /**
      * Print all type of list with generic format
      *
-     * @param player
+     * @param player    Player to send
      * @param listObj   list to print
      * @param nameList  name of thing printed
      * @param formatter use to explicit how to make object of list to string

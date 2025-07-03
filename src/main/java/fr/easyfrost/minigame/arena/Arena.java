@@ -6,9 +6,9 @@ import java.util.UUID;
 
 public class Arena {
 
-    private String name;
-    private List<UUID> players;
-    private Option option;
+    private final String name;
+    private final List<UUID> players;
+    private final Option option;
 
 
     public Arena(String nameArena) {

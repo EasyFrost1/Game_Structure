@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class ArenaManager {
 
-    private static List<Arena> arenas = new ArrayList<>();
+    private static final List<Arena> arenas = new ArrayList<>();
 
     /* ************************************************** */
     /* ***               MANAGE ARENA                 *** */
@@ -16,7 +16,7 @@ public class ArenaManager {
     /**
      * Create an arena if name not already used
      *
-     * @param nameArena
+     * @param nameArena name of the arena to create
      * @return true if created, false else
      */
     public static boolean createArena(String nameArena) {
@@ -31,7 +31,7 @@ public class ArenaManager {
     /**
      * Delete an arena if name exists
      *
-     * @param nameArena
+     * @param nameArena name of arena to delete
      * @return true if deleted, false else
      */
     public static boolean deleteArena(String nameArena) {
@@ -45,7 +45,7 @@ public class ArenaManager {
     /**
      * Get the arena correspond to nameArena
      *
-     * @param nameArena
+     * @param nameArena name of arena to get
      * @return Arena if exists, null else
      */
     public static Arena getArena(String nameArena) {
@@ -56,7 +56,7 @@ public class ArenaManager {
 
     /**
      * Get the arena where player is
-     * @param uuid
+     * @param uuid  uuid of player to find game
      * @return
      */
     public static Arena getArena(UUID uuid) {
@@ -68,7 +68,7 @@ public class ArenaManager {
     /**
      * Check if arena already exist
      *
-     * @param nameArena
+     * @param nameArena name of arena to find
      * @return true if exists, false else
      */
     public static boolean arenaExist(String nameArena) {
@@ -78,7 +78,7 @@ public class ArenaManager {
 
     /**
      * If arena exist, start the arena
-     * @param nameArena
+     * @param nameArena name of arena to start
      * @return true if started, false else
      */
     public static boolean startArena(String nameArena) {
@@ -90,8 +90,8 @@ public class ArenaManager {
 
     /**
      * Stop the game
-     * @param nameArena
-     * @return
+     * @param nameArena name of arena to stop
+     * @return true if stopped, false else
      */
     public static boolean stopArena(String nameArena) {
         Arena arena = getArena(nameArena);
@@ -103,8 +103,8 @@ public class ArenaManager {
 
     /**
      * Enable the arena if condition is respected
-     * @param nameArena
-     * @return
+     * @param nameArena name of arena to enable
+     * @return true if arena is enabled, false else
      */
     public static boolean enableArena(String nameArena) {
         Arena arena = getArena(nameArena);
@@ -117,7 +117,7 @@ public class ArenaManager {
 
     /**
      * Disable the arena
-     * @param nameArena
+     * @param nameArena name of arena to dsable
      * @return true if disabled, false else
      */
     public static boolean disableArena(String nameArena) {
@@ -135,8 +135,8 @@ public class ArenaManager {
     /**
      * If arena exist add player to playerList
      *
-     * @param nameArena
-     * @param uuid
+     * @param nameArena name of arena to join
+     * @param uuid  uuid of player to add
      * @return true if added, false else
      */
     public static boolean joinArena(String nameArena, UUID uuid) {
@@ -149,7 +149,7 @@ public class ArenaManager {
 
     /**
      * If arena exist remove player to list
-     * @param uuid
+     * @param uuid  uuid of player to remove
      * @return true if removed, false else
      */
     public static boolean leaveArena(UUID uuid) {
