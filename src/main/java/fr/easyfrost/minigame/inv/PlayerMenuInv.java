@@ -3,7 +3,6 @@ package fr.easyfrost.minigame.inv;
 import fr.easyfrost.minigame.arena.Arena;
 import fr.easyfrost.minigame.arena.ArenaManager;
 import fr.easyfrost.minigame.utils.ItemManager;
-import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -11,7 +10,7 @@ import org.bukkit.inventory.Inventory;
 public class PlayerMenuInv {
 
     /**
-     * Get an inventory with allactive arenas already created or empty
+     * Get an inventory with all actives arenas already created or empty
      * @return inventory with arena list
      */
     public static Inventory getArenaInventory() {

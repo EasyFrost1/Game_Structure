@@ -57,7 +57,7 @@ public class ArenaManager {
     /**
      * Get the arena where player is
      * @param uuid  uuid of player to find game
-     * @return
+     * @return return arena if exists, false else
      */
     public static Arena getArena(UUID uuid) {
         for (Arena arena : arenas) if (arena.getPlayers().contains(uuid)) return arena;
@@ -117,7 +117,7 @@ public class ArenaManager {
 
     /**
      * Disable the arena
-     * @param nameArena name of arena to dsable
+     * @param nameArena name of arena to disable
      * @return true if disabled, false else
      */
     public static boolean disableArena(String nameArena) {
@@ -165,7 +165,7 @@ public class ArenaManager {
     /**
      * Get all the active arena name on list
      *
-     * @return an array with arena name
+     * @return a list with arena name
      */
     public static List<String> getActiveArenaName() {
         List<String> list = new LinkedList<>();
@@ -179,7 +179,7 @@ public class ArenaManager {
 
     /**
      * Get all the arena name on list
-     * @return an array with arena name
+     * @return a list with arena name
      */
     public static List<String> getArenaName() {
         List<String> list = new LinkedList<>();
